@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="boby" >
+<div class="container">
+    <div class="container">
+    <div class="header">
+        <h2>REGISTER FORM</h2>
+    </div>
+</div>
+<form class="form" id="form" action="" method="POST">
+    <div class="form-control" style="margin-bottom: 20px;">
+        <label>Username :</label>
+        <input type="text" id="username" name="username" placeholder="Enter your Username" autocomplete="off" required="">
+        <small>Error msg</small>
+    </div>
+    <div class="form-control">
+        <label>Email Address :</label>
+        <input type="email" id="email" name="emial" placeholder="Enter your Email Address" autocomplete="off" required="">
+        <small>Error msg</small>
+    </div>
+    <div class="form-control">
+        <label>Phone Number :</label>
+        <input type="number" id="phone" name="Phone" placeholder="Enter your Phone Number" autocomplete="off" required="">
+        <small>Error msg</small>
+    </div>
+    <div class="form-control">
+        <label>Password :</label>
+        <input type="text" id="password" name="Password" placeholder="Enter your Password" autocomplete="off" required="">
+        <small>Error msg</small>
+    </div>
+    <div class="form-control">
+        <label>Confirm Password :</label>
+        <input type="text"id ="cpassword" name="Cpassword" placeholder="Confirm your Password" autocomplete="off" required="">
+        <small>Error msg</small>
+    </div>
+    <input type="submit" class="btn" value="submit" name="">
+</form>
+</div>
+</div>
+<script type="typeScript" href=validate.js></script>
+
+<script type="typeScript" href=uselocalstorage.js></script>
+</body>
+</html>
