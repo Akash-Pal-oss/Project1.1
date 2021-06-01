@@ -1,0 +1,11 @@
+touch .gitignore 
+git config --global user.name Akash pal
+git config --global user.email "akashpal784@gmail.com"
+git init 
+git add .
+git commit -m "initial commit"
+git status 
+ssh-keygen -t rsa -b 4096 -C "your email address"
+tail <path to id_rsa.pub>
+git remote add origin <ssh url.git>
+git push origin master
