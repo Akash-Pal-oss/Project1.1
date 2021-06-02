@@ -23,7 +23,7 @@ if(window.localStorage){
 
     let message =document.getElementsByTagName("P");
 
-    function show(){
+    function showcase(){
         if(username==orgusername.value && email==orgemail.value && phone==orgphone.value && password==orgpassword.value && cpassword==orgpassword.value && password==cpassword){
             message.innerHTML ="Login successful...";
 
@@ -33,7 +33,7 @@ if(window.localStorage){
         }
 
     }
-    submit.addEventListener('click',show)
+    submit.addEventListener('click',showcase)
 
 
 }
