@@ -122,3 +122,10 @@ body{
     }
 }
 
+.message{
+    font-size: medium;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 35px;
+    visibility: hidden;
+}
