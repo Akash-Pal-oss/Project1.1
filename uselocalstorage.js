@@ -25,7 +25,7 @@ if(window.localStorage){
 
     function showcase(){
         if(username==orgusername.value && email==orgemail.value && phone==orgphone.value && password==orgpassword.value && cpassword==orgpassword.value && password==cpassword){
-            message.innerHTML ="Login successful...";
+            message.innerHTML ="Register successful...";
 
         }
         else{

@@ -18,7 +18,7 @@
     <form class="form" id="form">
         <div class="form-control">
             <label>Email Address :</label>
-            <input type="email" id="email" name="emial" placeholder="Enter your Email Address" autocomplete="Off">
+            <input type="email" id="email" name="email" placeholder="Enter your Email Address" autocomplete="Off">
             <small>Error msg</small>
         </div>
         <div class="form-control">
@@ -26,12 +26,27 @@
             <input type="text" id="password" name="Password" placeholder="Enter your Password" autocomplete="Off">
             <small>Error msg</small>
         </div>
-        <input type="submit" class="btn" value="submit" name="">
+        <input type="submit" onclick="submit()"   class="btn" value="submit" name="">
         <div style=margin-top:10px;> <b>NOTE:</b> Don't have an account?  <a href="Register.html" style="color:red">Register here</a></br>
       </div>
     </form>
     </div>
     </div>
-    
+    <script>
+    function submit(){
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        var localemail = localStorage.getItem("email");
+        var localpassword = localStorage.getItem("password");
+
+        if(email==localemail && password==localpassword){
+            window.location.href="Home.html";
+        }
+        else{
+            alert("email and password os incorrect");
+        }
+    }
+    </script>
 </body>
 </html>
